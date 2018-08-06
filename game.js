@@ -1,4 +1,4 @@
-var id=0;
+/*var id=0;
 function createT()
 {
 	var tb1=document.getElementById("tb1");
@@ -11,9 +11,16 @@ function createT()
 			cell.width="20px";
 			cell.height="20px";
 			cell.id=id++;
+
 			row.appendChild(cell);
 			cell.innerHTML=id;			
 		}
 		tb1.appendChild(row);
 	}
+}*/
+function content(elem)
+{
+	//elem.style.backgroundColor="red";
+	var p=document.getElementById("para");
+	p.innerHTML='You clicked on cell:'+ ' ' + elem.innerText;
 }
