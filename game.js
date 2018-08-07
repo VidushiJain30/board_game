@@ -1,8 +1,14 @@
+var c=0;
 function content(elem)
 {
 	//elem.style.backgroundColor="red";
 	var p=document.getElementById("para");
-	p.innerHTML='You clicked on cell:'+ ' ' + elem.innerText;
+	if(elem.innerText==5)
+	{
+		c++;
+	}
+	p.innerHTML='Your Score:'+ ' ' + c;
+	initlization();
 }
 var ts=60*1;
 var min=parseInt(ts/60);
