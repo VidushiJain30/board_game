@@ -1,4 +1,5 @@
 var c=0;
+//var d=0;
 function content(elem)
 {
 	//elem.style.backgroundColor="red";
@@ -6,6 +7,7 @@ function content(elem)
 	if(elem.innerText==5)
 	{
 		c++;
+//		d=c;
 	}
 	p.innerHTML='Your Score:'+ ' ' + c;
 	initlization();
@@ -16,7 +18,8 @@ var sec=parseInt(ts%60);
 function CheckTime(){
 	document.getElementById("timer").innerHTML='Time Left: '+ min+ ' : ' + sec;
 	if(ts<=0){
-		document.getElementById("timer").innerHTML='TIME OVER';		
+		document.getElementById("timer").innerHTML='TIME OVER';
+		over();		
 	}	
 	else{
 		ts=ts-1;
@@ -54,4 +57,9 @@ for (var i = to-from; i; i--) {
 
     [nums[i - 1], nums[j]] = [nums[j], nums[i - 1]];
     }
+}
+function over()
+{
+	window.open("over.html","_self");
+   document.getElementById("compiler").style.display="block";
 }
