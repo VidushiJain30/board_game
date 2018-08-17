@@ -12,6 +12,9 @@ function content(elem)
 	p.innerHTML='Your Score:'+ ' ' + c;
 	initlization();
 }
+function display(){
+	alert(c);
+}
 var ts=60*1;
 var min=parseInt(ts/60);
 var sec=parseInt(ts%60);
